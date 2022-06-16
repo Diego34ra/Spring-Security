@@ -9,10 +9,8 @@ import spring.security.repository.UserRepository;
 
 @Component
 public class StartApplication implements CommandLineRunner {
-
     @Autowired
     private UserRepository repository;
-
     @Transactional
     @Override
     public void run(String... args) throws Exception {

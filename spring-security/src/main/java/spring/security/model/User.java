@@ -9,7 +9,7 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+    @Column(name = "id_user")
     private Integer id;
     @Column(length = 50, nullable = false)
     private String name;
@@ -24,6 +24,7 @@ public class User {
     private List <String> roles = new ArrayList<>();
 
     public User() {
+        
     }
 
     public User(String username){
